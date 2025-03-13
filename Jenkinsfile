@@ -1,4 +1,4 @@
-```pipeline {
+pipeline {
     agent any
 
     stages {
@@ -13,7 +13,7 @@
 
         stage('Build') {
             steps {
-                build 'PES2UG22CS249-1'
+                build 'PES2UG22CS196-1'
                 sh 'g++ main.cpp -o output'
             }
         }
@@ -36,4 +36,4 @@
            echo 'error Pipeline failed'
         }
     }
-}```
+}
